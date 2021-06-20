@@ -414,28 +414,8 @@ Unearthed Arcana content can be accessed by cycling the &quot;All Sources&quot; 
 
 	<hr class="no-shrink w-100 my-0">
 </div>
-
+<!--
 <main class="container">
-<!--	<div id="don-wrapper" class="alert alert-info" style="display: none">-->
-<!--		<div class="split" style="align-items: center">-->
-<!--			<div class="text-center" style="max-width: 260px; padding-right: 10px;">For those with an abundance of gold, we accept <a href="donate.html">donations</a>.</div>-->
-<!--			<div style="width: 100%">-->
-<!--				<div class="don__bar don__bar&#45;&#45;home">-->
-<!--					<div class="don__bar_inner"></div>-->
-<!--				</div>-->
-<!--				<div class="split">-->
-<!--					<span>€0.00</span>-->
-<!--					<span id="don-total">Loading...</span>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
-
-	<div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
-
-	<div class="w-100">
-		<p><a href="https://www.patreon.com/bePatron?u=22018559" rel="noopener noreferrer"><img src="img/patreon.png" alt="Become a Patron" style="width: 217px; height: 51px"></a></p>
-
 		<h3>Use Discord?</h3>
 		<p>Join our <a href="https://discord.gg/nGvRCDs" target="_blank" rel="noopener noreferrer">server</a> for announcements, updates, and feature voting.</p>
 
@@ -467,6 +447,8 @@ Unearthed Arcana content can be accessed by cycling the &quot;All Sources&quot; 
 		<p title=":^)">5etools is intended as an easily-accessible digital reference for products you already own. Please ensure you only access content in accordance with your local laws.</p>
 	</div>
 </main>
+-->
+<!--
 <footer class="container">
 	<p class="text-center">
 		Version
@@ -479,48 +461,7 @@ Unearthed Arcana content can be accessed by cycling the &quot;All Sources&quot; 
 		<i>5etools&reg; is a Registered Trademark of The Norr Group Ltd. All rights reserved.</i>
 	</p>
 </footer>
-<div class="cancer__footer-pad"></div>
-<!--5ETOOLS_SCRIPT_ANCHOR-->
-<!--5ETOOLS_AD_ADHESION-->
-<script type="text/javascript" src="js/shared.js?v=1.131.2"></script>
-<script type="text/javascript" src="lib/localforage.js"></script>
-<script type="text/javascript" src="lib/jquery.js"></script>
-<script type="text/javascript" src="lib/elasticlunr.js"></script>
-<script>
-	ExcludeUtil.pInitialise();
-
-	const $demoRoller = $(`#demo_roller`);
-	$demoRoller.html(Renderer.get().render(`{@dice ${$demoRoller.html()}}`));
-
-	$(`#current_year`).text((new Date).getFullYear());
-
-	$(`#version_number`).text(VERSION_NUMBER).attr("href", `https://get.5e.tools/`);
-
-	const $lnkB20 = $(`#betteR20_link`);
-	$lnkB20.attr("href", `${$lnkB20.attr("href")}?v=${VERSION_NUMBER}_${Date.now()}`);
-
-	window.__cmp2 = () => {
-		alert("This only works on a live version of the site!");
-	};
-
-	// TAG Disabled until further notice
-	/*
-	(async () => {
-		if (!await _Donate.pNotDonating()) {
-			const $wrpDon = $(`#don-wrapper`).show();
-			$(`<div><span class="glyphicon glyphicon-remove"></span></div>`).css({
-				position: "absolute",
-				top: 0,
-				right: 2,
-				cursor: "pointer"
-			}).click(() => {
-				StorageUtil.pSet("notDonating", true);
-				$wrpDon.remove();
-			}).appendTo($wrpDon);
-			_Donate.init();
-		}
-	})();
-	*/
+-->
 </script>
 </body>
 </html>
